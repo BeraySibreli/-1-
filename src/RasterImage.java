@@ -6,7 +6,6 @@ class RasterImage extends Image {
      int[][] pixels;
      int[][] previousPixels;
 
-    // Конструктор на класа
     public RasterImage(String fileName, int width, int height) {
         super(fileName);
         this.width = width;
