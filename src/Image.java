@@ -1,11 +1,20 @@
-import java.io.*;
+class Image {
+    protected String filename;
 
-abstract class Image {
-    String fileName;
-
-    public Image(String fileName) {
-        this.fileName = fileName;
+    public Image(String filename) {
+        this.filename = filename;
     }
 
-    public abstract void saveToFile() throws IOException;
+    public String getFilename() {
+        return filename;
+    }
+
+    public void save() {
+        System.out.println("Saving image: " + filename);
+    }
+
+    public void saveAs(String newFilename) {
+        System.out.println("Saving " + filename + " as " + newFilename);
+        this.filename = newFilename;
+    }
 }
