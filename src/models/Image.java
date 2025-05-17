@@ -1,7 +1,7 @@
 package models;
 
 public abstract class Image {
-    protected String filename;
+    protected final String filename;
 
     public Image(String filename) {
         this.filename = filename;
@@ -11,6 +11,6 @@ public abstract class Image {
         return filename;
     }
 
-    public abstract void save();
-    public abstract void saveAs(String newFilename);
+    // Може да се използва за визуализация, тестване или разширяване
+    public abstract void display();
 }
