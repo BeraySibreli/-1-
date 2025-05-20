@@ -11,6 +11,6 @@ public abstract class Image {
         return filename;
     }
 
-    // Може да се използва за визуализация, тестване или разширяване
+
     public abstract void display();
 }

@@ -8,7 +8,7 @@ public class RasterImage extends Image {
 
     @Override
     public void display() {
-        // Фиктивна реализация – просто принтира името
+
         System.out.println("Displaying image: " + filename);
     }
 }
