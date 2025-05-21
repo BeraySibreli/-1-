@@ -1,6 +1,19 @@
 package commands;
 
+/**
+ * Команда за извеждане на списък с поддържаните команди и тяхната употреба.
+ * <p>
+ * Имплементира интерфейса {@link Command}.
+ */
 public class HelpCommand implements Command {
+
+    /**
+     * Изпълнява командата за показване на помощна информация.
+     * <p>
+     * Извежда списък с наличните команди и синтаксиса за тяхното използване.
+     *
+     * @param args аргументи на командата (не се използват)
+     */
     @Override
     public void execute(String[] args) {
         System.out.println("Commands:");
